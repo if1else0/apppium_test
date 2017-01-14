@@ -1,0 +1,14 @@
+<suite name="Suite-Login" parallel="none">
+    <listeners>
+        <listener class-name="TestListener"></listener>
+        <listener class-name="RetryListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Login-Module">
+        <classes>
+            <class name="Login1"  />
+            <class name="Login2" />
+        </classes>
+    </test>
+</suite>

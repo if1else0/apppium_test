@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Custom suite" >
+    <listeners>
+        <listener class-name="TestListener2"></listener>
+        <listener class-name="ReRunListener"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test verbose="1" name="source0" annotations="JDK">
+        <classes>
+            <class name="Login11"/>
+            <class name="Login22"/>
+        </classes>
+    </test>
+</suite>
+
